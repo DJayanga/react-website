@@ -55,5 +55,55 @@ nav {
   position: absolute;
   left: calc(50% - 0.6rem);
   transform: rotate(45deg);
-  margin-top: 2.5rem;
+  margin-top: 0.9rem;
+}
+
+/*--------- Media Queries for Small & Medium Screens ---------*/
+
+@media screen and (max-width: 1024px) {
+  .nav-toggle-btn {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-toggle-btn svg {
+    color: var(--color-grey-100);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .active-nav, .active-nav::after {
+    display: none;
+  }
+
+  .nav-links li {
+    height: 4rem;
+    width: 100%;
+    box-shadow: -2rem 2rem 5rem rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-links li a {
+    background-color: var(--color-primary);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem 1rem 3rem;
+  }
+}
+
+.show-nav{
+  display: flex;
+}
+
+.hide-nav{
+  display: none;
 }
