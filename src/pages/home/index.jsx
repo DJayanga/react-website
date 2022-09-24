@@ -1,9 +1,13 @@
-import "./index.css"
+import Header from "../../components/header";
+import "./index.css";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Header />
+      Home
+    </>
+  );
+};
 
-export default Home
+export default Home;
